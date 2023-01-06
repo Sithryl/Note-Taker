@@ -12,7 +12,7 @@ router.post("/notes", (req, res) => {
     title: req.body.title,
     text: req.body.text,
     // id for future delete
-    // id: ./db.db.json.JSON.parse(./db.db.json),
+    // id: ./dbNote.JSON.parse(),
   };
   dbNote.push(newNote);
   fs.writeFileSync("./db/db.json", JSON.stringify(dbNote));
