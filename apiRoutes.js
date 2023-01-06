@@ -6,7 +6,7 @@ let dbNote = require("./db/db.json");
 router.get("/notes", (req, res) => {
   res.json(dbNote);
 });
-// 
+// route for posting new note
 router.post("/notes", (req, res) => {
   let newNote = {
     title: req.body.title,
